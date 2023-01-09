@@ -12,6 +12,7 @@ to setup
   reset-ticks
 end
 
+
 ; Criterio de parada: si se supera un número aleatorio de
 ; ticks, la figura se detiene.
 ; Dependiendo de la opción elegida por el usuario, se ejecutará
@@ -43,6 +44,7 @@ to go
   ]
   tick
 end
+
 
 ; Círculos hacia la derecha. Las tortugas madre giran 1 hacia la derecha
 ; y generan una tortuga hija que dibuja un círculo hacia la derecha, y
@@ -130,6 +132,7 @@ to random-left
   tick
 end
 
+
 ; Dibuja cuadrados
 to square-right
   ask turtles [
@@ -197,6 +200,8 @@ to square-left-random
   tick
 end
 
+
+; Dibuja triángulos
 to triangle-right
   ask turtles [
     rt 1
@@ -212,7 +217,6 @@ to triangle-right
   every 0.5 [ if color-shift? [ color-shift ] ]
   tick
 end
-
 
 to triangle-left
   ask turtles [
@@ -230,6 +234,8 @@ to triangle-left
   tick
 end
 
+
+; Dibuja octógonos
 to octagon-right
   ask turtles [
     rt 1
@@ -245,7 +251,6 @@ to octagon-right
   every 0.5 [ if color-shift? [ color-shift ] ]
   tick
 end
-
 
 to octagon-left
   ask turtles [
@@ -263,6 +268,8 @@ to octagon-left
   tick
 end
 
+
+; Dibuja pentágonos
 to pentagon-right
   ask turtles [
     rt 1
@@ -278,7 +285,6 @@ to pentagon-right
   every 0.5 [ if color-shift? [ color-shift ] ]
   tick
 end
-
 
 to pentagon-left
   ask turtles [
@@ -296,6 +302,8 @@ to pentagon-left
   tick
 end
 
+
+; Dibuja hexágonos
 to hexagon-right
   ask turtles [
     rt 1
@@ -328,6 +336,8 @@ to hexagon-left
   tick
 end
 
+
+; Dibuja eneágonos
 to ninegon-right
   ask turtles [
     rt 1
@@ -359,6 +369,7 @@ to ninegon-left
   every 0.5 [ if color-shift? [ color-shift ] ]
   tick
 end
+
 
 ; Para cambiar el color, si la opción increase ha sido activada por el usuario, se
 ; suma al identificador del color actual un número aleatorio hasta 200. Se ha colocado
